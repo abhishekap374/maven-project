@@ -17,7 +17,7 @@ pipeline{
         }
         stage("Deploy-Dev"){
             steps{
-                sh "curl -v -u tomcat:tomcat1 -T /var/lib/jenkins/workspace/Sample-declarative-pipeline2/webapp/target/webapp.war 'http://192.168.33.103:8989//manager/text/deploy?path=Maven-Pipeline'"
+                sh "curl -v -u tomcat:tomcat1 -T /var/lib/jenkins/workspace/Sample-declarative-pipeline2/webapp/target/webapp.war 'http://192.168.33.103:8989//manager/text/deploy?path=/spring-pipeline'"
             }
         }
     }
