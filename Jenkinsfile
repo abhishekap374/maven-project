@@ -15,5 +15,10 @@ pipeline{
                 sh "mvn clean package"
             }
         }
+        stage("Deploy-Dev"){
+            steps{
+                
+            }
+        }
     }
 }
