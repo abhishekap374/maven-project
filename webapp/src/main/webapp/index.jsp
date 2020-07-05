@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Introduction to Jenkins !!</title>
+</head>
+<body>
+
+<h1>My First Jenkins Build Job</h1>
+<p>Jenkins run the build when the post commit action will be complete</p>
+
+<html>
 <body>
 
 <h1 style="background-color:Tomato;">Abhishek/Vagrant</h1>
