@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-               git credentialsId: 'forGitconfigure', url: 'https://github.com/abhishekap374/maven-project.git'
+               git 'https://github.com/abhishekap374/maven-project.git'
             }
         }
         stage("Maven Build"){
@@ -15,9 +15,14 @@ pipeline{
                 sh "mvn clean package"
             }
         }
-        stage("Deploy-Dev"){
+        stage("Maven Test"){
             steps{
-                sh "curl -v -u tomcat:tomcat1 -T /var/lib/jenkins/workspace/Sample-declarative-pipeline2/webapp/target/webapp.war 'http://192.168.33.103:8989//manager/text/deploy?path=/spring-pipeline'"
+                sh "mvn test"
+            }
+        }
+        stage("Maven Deploy"){
+            steps{
+                sh "curl -v -u tomcat:tomcat1 -T /var/lib/jenkins/workspace/Sample_Declarative_PipeLine_Job/webapp/target/webapp.war 'http://3.135.224.218:8080//manager/text/deploy?path=/spring-pipeline'"
             }
         }
     }
