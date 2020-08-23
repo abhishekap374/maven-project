@@ -5,8 +5,8 @@
 </head>
 <body>
 
-<h1>My First Jenkins Build Job</h1>
-<p>Jenkins run the build when the post commit action will be complete</p>
+<h1>My Jenkins Build Job</h1>
+<p>Jenkins should run the build successfully on Web</p>
 
 <html>
 <body>
