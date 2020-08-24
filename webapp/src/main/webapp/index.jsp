@@ -15,7 +15,7 @@
 <h1 style="background-color:Orange;">Jenkins Build1</h1>
 <h1 style="background-color:DodgerBlue;">Ip address: 192.168.33.100</h1>
 <h1 style="background-color:SlateBlue;">Host/Port:1989 and Tomcat:8080</h1>
-<h1 style="background-color:MediumSeaGreen;">Build Test Deploy Test</h1>
+<h1 style="background-color:MediumSeaGreen;">Build Test Deploy and Test</h1>
 <h1 style="background-color:Gray;">Jenkins should successfully Deploy this application to Tomcat server(http://192.168.33.100:8080/)!!</h1>
 
 
